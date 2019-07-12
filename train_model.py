@@ -94,7 +94,7 @@ model.add(Activation('relu'))
 
 model.add(Conv2D(nfilters[1], (3, 3), padding='same'))
 model.add(BatchNormalization(axis=-1))
-model.add(Activation('relu'))
+model.add(Activation('relu'))#activation_4
 
 #this is the CAM part: global average pooling and a dense layer with no bias
 model.add(GlobalAveragePooling2D(name='GAP')) #output shape: (None, 256)
